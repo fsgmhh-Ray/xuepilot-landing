@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XuePilot - AI 时代心智操作系统</title>
+    <title>XuePilot 派乐伴学 - 专为 Homeschooling 打造的 AI 伴学系统</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #030712; color: #f8fafc; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; }
@@ -59,7 +59,10 @@
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-cyan-600 rounded-lg flex items-center justify-center text-white font-black text-xl shadow-[0_0_15px_rgba(8,145,178,0.6)]">XP</div>
-                <span class="text-2xl font-black tracking-widest text-white">XUEPILOT</span>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-2xl font-black tracking-widest text-white">XUEPILOT</span>
+                    <span class="text-sm font-bold text-cyan-400 tracking-widest hidden sm:block">派乐伴学</span>
+                </div>
             </div>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#features" class="nav-link">教育理念</a>
@@ -88,11 +91,11 @@
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">思想的源头</span>
             </h1>
             <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-                不要让孩子沦为机器的搬运工。XuePilot 摒弃标准答案，通过沉浸式科幻推演，在实战中锻造孩子的<strong class="text-white">提问力、防伪力与跨域整合力</strong>。
+                专为 Homeschooling 打造的下一代 AI 伴学系统。<strong class="text-white">XuePilot 派乐伴学</strong> 摒弃标准答案，通过沉浸式的 3D 星球教室与科幻推演，在实战中锻造孩子的提问力、防伪力与跨域整合力。
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-                <a href="https://app.xuepilot.com" class="btn-primary text-lg px-10 py-4">启动 AI 模拟舱 ➔</a>
-                <a href="#features" class="px-10 py-4 rounded-full border border-slate-700 text-white font-bold hover:bg-slate-800 transition">了解心智引擎</a>
+                <a href="https://app.xuepilot.com" class="btn-primary text-lg px-10 py-4">启动 3D 星球教室 ➔</a>
+                <a href="#features" class="px-10 py-4 rounded-full border border-slate-700 text-white font-bold hover:bg-slate-800 transition">了解伴学引擎</a>
             </div>
         </div>
         
@@ -106,11 +109,11 @@
                 </div>
                 <div class="p-6 font-mono text-sm md:text-base space-y-4 min-h-[220px]">
                     <div x-show="termStep >= 1" x-transition.opacity.duration.500ms class="flex gap-4">
-                        <span class="text-purple-400 font-bold shrink-0">[AI 参谋]</span>
+                        <span class="text-purple-400 font-bold shrink-0">[NOVA 伴学导师]</span>
                         <span class="text-slate-300">火星生态舱水管堵塞。建议：直接将室内温度升高至 50°C，利用高温促使植物加速蒸发水分。请批准。</span>
                     </div>
                     <div x-show="termStep >= 2" x-transition.opacity.duration.500ms class="flex gap-4 mt-4">
-                        <span class="text-cyan-400 font-bold shrink-0">[指挥官]</span>
+                        <span class="text-cyan-400 font-bold shrink-0">[人类指挥官]</span>
                         <span class="text-cyan-50 font-bold" :class="termStep === 2 ? 'blinking-cursor' : ''" x-text="userTyped"></span>
                     </div>
                     <div x-show="termStep >= 3" x-transition.opacity.duration.500ms class="flex gap-4 mt-4 pt-4 border-t border-slate-800">
@@ -119,23 +122,23 @@
                     </div>
                 </div>
             </div>
-            <p class="text-slate-500 text-sm mt-4 font-mono">↑ 告别死记硬背，训练孩子一眼识破 AI 逻辑漏洞的能力。</p>
+            <p class="text-slate-500 text-sm mt-4 font-mono text-center">↑ 告别死记硬背，训练孩子一眼识破 AI 逻辑漏洞的“判官”能力。</p>
         </div>
     </section>
 
     <section id="features" class="py-24 bg-slate-950">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black mb-4">重新定义 AI 时代的学习力</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">当机器能在 3 秒内给出答案，人类的价值在于如何提出好问题，并判断答案的真伪。</p>
+                <h2 class="text-4xl font-black mb-4">重新定义 Homeschooling 与 AI 伴学</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">当机器能在 3 秒内给出答案，我们不再让孩子记忆，而是教他们如何向机器提问，并判断答案的真伪。</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="card-tech p-8">
-                    <div class="w-14 h-14 bg-cyan-900/50 rounded-xl flex items-center justify-center text-3xl mb-6 border border-cyan-500/30">🧠</div>
-                    <h3 class="text-2xl font-bold mb-3 text-white">【破局】反共识提问引擎</h3>
+                    <div class="w-14 h-14 bg-cyan-900/50 rounded-xl flex items-center justify-center text-3xl mb-6 border border-cyan-500/30">🌌</div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">【沉浸】3D 星球教室</h3>
                     <p class="text-slate-400 leading-relaxed text-sm">
-                        XuePilot 绝不直接提供标准答案。系统通过苏格拉底式的循循善诱，提供思维脚手架，教孩子如何使用专业的 Prompt 向 AI 提出高质量问题，将机器变成探讨伙伴。
+                        专为 Homeschooling 打造的沉浸式知识宇宙。将枯燥的全球教学大纲转化为可探索的 3D 星系，激发孩子主动探索的源动力，让学习变成一场宏大的星际冒险。
                     </p>
                 </div>
                 <div class="card-tech p-8 relative overflow-hidden">
@@ -143,14 +146,14 @@
                     <div class="w-14 h-14 bg-rose-900/30 rounded-xl flex items-center justify-center text-3xl mb-6 border border-rose-500/30">🛡️</div>
                     <h3 class="text-2xl font-bold mb-3 text-white">【防伪】机器幻觉免疫营</h3>
                     <p class="text-slate-400 leading-relaxed text-sm">
-                        习惯了依赖 AI 的孩子极易被误导。我们的模拟舱会故意生成看似专业实则违背常识的“谬误建议”，强制孩子化身“判官”，揪出逻辑漏洞，建立坚不可摧的批判性思维。
+                        习惯依赖 AI 的孩子极易被误导。我们的模拟舱会故意生成违背常识的“谬误建议”，强制孩子化身“判官”揪出逻辑漏洞，建立坚不可摧的批判性思维。
                     </p>
                 </div>
                 <div class="card-tech p-8">
-                    <div class="w-14 h-14 bg-purple-900/50 rounded-xl flex items-center justify-center text-3xl mb-6 border border-purple-500/30">🌌</div>
-                    <h3 class="text-2xl font-bold mb-3 text-white">【升维】跨域知识整合舱</h3>
+                    <div class="w-14 h-14 bg-purple-900/50 rounded-xl flex items-center justify-center text-3xl mb-6 border border-purple-500/30">🤖</div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">【赋能】NOVA 全科伴学</h3>
                     <p class="text-slate-400 leading-relaxed text-sm">
-                        打破传统的单一学科壁垒。在应对一次完整的星际救援任务时，孩子需要同时调用物理常识、生物逻辑与人文关怀，利用 AI 强大的计算力，给出全盘最优解。
+                        24小时在线的专属 Homeschooling 外教。打破传统的单一学科壁垒，通过苏格拉底式的循循善诱，引导孩子跨域整合全球教育资源，完成硬核探索项目。
                     </p>
                 </div>
             </div>
@@ -162,9 +165,9 @@
             <div class="flex justify-between items-end mb-12">
                 <div>
                     <h2 class="text-4xl font-black mb-2">前沿教育洞察</h2>
-                    <p class="text-slate-400">来自 XuePilot 团队对教育与科技的深度思考</p>
+                    <p class="text-slate-400">来自 XuePilot 派乐伴学团队对教育与科技的深度思考</p>
                 </div>
-                <a :href="`https://${hashnodeHost}`" target="_blank" class="text-cyan-400 hover:text-white font-bold hidden sm:block">访问 Hashnode 专栏 ➔</a>
+                <a :href="`https://${hashnodeHost}`" target="_blank" class="text-cyan-400 hover:text-white font-bold hidden sm:block">访问AI与教育专栏 ➔</a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -196,20 +199,25 @@
                     </template>
                 </template>
             </div>
+            
+            <!-- 移动端专栏入口 -->
+            <div class="mt-8 text-center sm:hidden">
+                <a :href="`https://${hashnodeHost}`" target="_blank" class="inline-block px-6 py-3 border border-slate-700 rounded-full text-slate-300 hover:bg-slate-800 transition">访问AI与教育专栏 ➔</a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="py-24 bg-slate-950 border-t border-slate-800 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-900/20 blur-[100px] rounded-full pointer-events-none"></div>
         <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-5xl font-black mb-6">连接未来，与 XuePilot 一起</h2>
+            <h2 class="text-3xl md:text-5xl font-black mb-6">连接未来，与 XuePilot 派乐伴学 一起</h2>
             <p class="text-slate-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-                XuePilot 团队由资深教育者与顶尖工程师共同创立。我们坚信，未来的教育不应是让孩子与机器拼记忆力，而是培养他们掌控智能、洞察真伪的核心心智。
+                XuePilot 派乐伴学团队由资深 Homeschooling 教育者与顶尖 AI 工程师共同创立。我们坚信，未来的教育不应是让孩子与机器拼记忆力，而是培养他们掌控智能、洞察真伪的核心心智。
             </p>
             <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between max-w-3xl mx-auto shadow-2xl">
                 <div class="text-left mb-6 md:mb-0">
-                    <h4 class="text-white font-bold text-xl mb-1">准备好探索了吗？</h4>
-                    <p class="text-slate-400 text-sm">如有商业合作、学校接入或媒体问询，请随时联系我们。</p>
+                    <h4 class="text-white font-bold text-xl mb-1">准备好开启星际探索了吗？</h4>
+                    <p class="text-slate-400 text-sm">如有商业合作、机构接入或媒体问询，请随时联系我们。</p>
                 </div>
                 <a href="mailto:connect@xuepilot.com" class="btn-primary flex items-center gap-2 shrink-0">
                     ✉️ connect@xuepilot.com
@@ -222,33 +230,34 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-cyan-600 rounded flex items-center justify-center text-white font-black text-sm">XP</div>
+                    <div class="flex items-baseline gap-2 mb-4">
+                        <div class="w-8 h-8 bg-cyan-600 rounded flex items-center justify-center text-white font-black text-sm relative top-1">XP</div>
                         <span class="text-xl font-black tracking-widest text-white">XUEPILOT</span>
+                        <span class="text-sm font-bold text-cyan-400 tracking-widest">派乐伴学</span>
                     </div>
                     <p class="text-sm text-slate-500 max-w-xs leading-relaxed">
-                        致力于为下一代打造 AI 时代的心智操作系统。<br>掌控技术，洞见真实。
+                        致力于为 Homeschooling 打造下一代 AI 伴学操作系统。<br>掌控技术，洞见真实。
                     </p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">系统导航</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://app.xuepilot.com" class="hover:text-cyan-400 transition">登录指令中枢</a></li>
-                        <li><a href="#features" class="hover:text-cyan-400 transition">了解核心架构</a></li>
-                        <li><a :href="`https://${hashnodeHost}`" target="_blank" class="hover:text-cyan-400 transition">教育专栏</a></li>
+                        <li><a href="https://app.xuepilot.com" class="hover:text-cyan-400 transition">登录星球教室</a></li>
+                        <li><a href="#features" class="hover:text-cyan-400 transition">了解伴学架构</a></li>
+                        <li><a :href="`https://${hashnodeHost}`" target="_blank" class="hover:text-cyan-400 transition">AI与教育专栏</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">联系我们</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="mailto:connect@xuepilot.com" class="hover:text-cyan-400 transition">connect@xuepilot.com</a></li>
-                        <li><a href="#" class="hover:text-cyan-400 transition">商务与学校合作</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition">商务与机构合作</a></li>
                         <li><a href="#" class="hover:text-cyan-400 transition">隐私政策</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-                <p>© 2026 XuePilot. Powered by Hashnode & Supabase.</p>
+                <p>© 2026 XuePilot 派乐伴学. Powered by Hashnode & Supabase.</p>
                 <div class="mt-4 md:mt-0 font-mono text-slate-500">
                     System.Status: <span class="text-emerald-500">ONLINE</span>
                 </div>
